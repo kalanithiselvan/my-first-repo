@@ -1,211 +1,85 @@
-/* App.css */
+```css
 body {
+  font-family: Arial, sans-serif;
+  background-color: #EDEFEE;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fefefe;
-  color: #222;
+  padding: 0;
+  color: #333333;
 }
 
-section {
-  padding: 60px 20px;
+nav {
+  background-color: #495E57;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #F4CE14;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #495E57;
   text-align: center;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #2c3e50;
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+label {
+  font-weight: bold;
+  color: #495E57;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #495E57;
+  border-radius: 4px;
 }
 
 button {
-  padding: 12px 28px;
-  background-color: #f4ce14;
-  color: #222;
-  border: none;
-  border-radius: 8px;
+  background-color: #F4CE14;
+  color: #333333;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  border: none;
 }
 
 button:hover {
-  background-color: #ddb200;
+  background-color: #E0B800;
 }
 
-/* Nav.css */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff8e1;
-  padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.error {
+  color: red;
+  font-size: 0.9em;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #f4ce14;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li {
-  cursor: pointer;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.nav-links li:hover {
-  color: #f4ce14;
-}
-
-/* CallToAction.css */
- .cta {
-  /* background: url('/images/restaurant.jpg') center/cover no-repeat; */ 
-  color: white;
-  padding: 100px 20px;
-}
-
-.cta-button {
-  background-color: #f4ce14;
-  color: #222;
-  padding: 14px 32px;
-  font-size: 18px;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* Specials.css */
-.specials {
-  background-color: #f8f8f8;
-}
-
-.specials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card {
-  background-color: white;
+.confirmation {
+  background-color: #FFFFFF;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
 }
-
-.card h3 {
-  color: #34495e;
-}
-
-.card span {
-  color: #27ae60;
-  font-weight: bold;
-}
-
-/* CustomersSay.css */
-.testimonials {
-  background-color: #fff;
-}
-
-.testimonial-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.testimonial {
-  background-color: #fafafa;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.testimonial strong {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* Chicago.css */
-.chicago {
-  background-color: #fefefe;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* BookingPage.css */
-.booking {
-  background-color: #f8f8f8;
-  padding: 60px 20px;
-}
-
-.booking-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.booking-form label {
-  grid-column: span 2;
-  text-align: left;
-  font-weight: 600;
-  color: #444;
-  margin-top: 10px;
-}
-
-.booking-form input[type="date"],
-.booking-form input[type="number"],
-.booking-form select {
-  grid-column: span 2;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: #fdfdfd;
-}
-
-.booking-form button[type="submit"] {
-  grid-column: span 2;
-  padding: 14px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #f4ce14;
-  color: #222;
-  border: none;
-  border-radius: 10px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.booking-form button[type="submit"]:hover {
-  background-color: #e0b800;
-}
+```
